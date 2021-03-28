@@ -1,41 +1,3 @@
-
-    Вольнов Иван Егорович <http://az.lib.ru/w/wolxnow_i_e/>
-    Как это было
-
-*Lib.ru/Классика:* <http://az.lib.ru/> [Регистрация
-<http://az.lib.ru/cgi-bin/login>] [Найти
-<http://az.lib.ru/cgi-bin/seek>] [Рейтинги
-<http://az.lib.ru/rating/top40/>] [Обсуждения
-<http://az.lib.ru/rating/comment/>] [Новинки
-<http://az.lib.ru/long.shtml>] [Обзоры
-<http://az.lib.ru/janr/index_janr_time23-1.shtml>] [Помощь
-<http://az.lib.ru/i/info/>]
-------------------------------------------------------------------------
-
-  * Оставить комментарий
-    <http://az.lib.ru/cgi-bin/comment?COMMENT=w/wolxnow_i_e/text_1912_kak_etoi_bylo_oldorfo>
-
-  * Вольнов Иван Егорович <http://az.lib.ru/w/wolxnow_i_e/> (_bmn@lib.ru_)
-  * Год: 1912
-  * Обновлено: 24/03/2020. 62k. Статистика.
-    <http://az.lib.ru/w/wolxnow_i_e/stat.shtml#text_1912_kak_etoi_bylo_oldorfo.shtml>
-
-  * Рассказ <http://az.lib.ru/type/index_type_3-1.shtml>: Проза
-    <http://az.lib.ru/janr/index_janr_1-1.shtml> Проза
-    <http://az.lib.ru/w/wolxnow_i_e/index.shtml#gr1> 
-
-	*Скачать FB2
-<http://az.lib.ru/w/wolxnow_i_e/wolxnow_i_e-text_1912_kak_etoi_bylo_oldorfo.fb2.zip>*
-
- Ваша оценка:
-
-------------------------------------------------------------------------
-
-
-        *Какъ это было.*
-
-РАЗСКАЗЪ.
-
        Черезъ 13 дней посл? суда, приговоръ былъ утвержденъ, и восемь
     челов?къ изъ сорока пов?щено, двадцать одинъ переведены въ каторжную
     тюрьму, десять -- въ Иркутку на поселеніе, а Власовъ забол?лъ. 
@@ -1016,32 +978,4 @@
     вытягивая бронзовыя шеи и разглядывая политическихъ. 
        Тихою-тихой ст?ною стоялъ за селеніемъ л?съ, и казалось -- н?тъ
     ему конца и краю... 
-       Вотъ она -- Сибирь!-- подумалъ Власовъ.-- Что же, будемъ жить...
-
-    *Иванъ Вольный.*
-
-    /"Современникъ", Кн. VII, 1912/
-
-        
-------------------------------------------------------------------------
-
-  * Оставить комментарий
-    <http://az.lib.ru/cgi-bin/comment?COMMENT=w/wolxnow_i_e/text_1912_kak_etoi_bylo_oldorfo>
-
-  * Вольнов Иван Егорович <http://az.lib.ru/w/wolxnow_i_e/> (_bmn@lib.ru_)
-  * Год: 1912
-  * Обновлено: 24/03/2020. 62k. Статистика.
-    <http://az.lib.ru/w/wolxnow_i_e/stat.shtml#text_1912_kak_etoi_bylo_oldorfo.shtml>
-
-  * Рассказ <http://az.lib.ru/type/index_type_3-1.shtml>: Проза
-    <http://az.lib.ru/janr/index_janr_1-1.shtml> 
-
-	
- Ваша оценка:
-
-------------------------------------------------------------------------
-/Связаться с программистом сайта <http://az.lib.ru/p/petrienko_p_w/>./
-
-
-Рейтинг@Mail.ru <http://top.mail.ru/jump?from=786618>
-<http://www.liveinternet.ru/click>
+       Вотъ она -- Сибирь!-- подумалъ Власовъ.-- Что же, будемъ жить... 
