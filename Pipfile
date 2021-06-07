@@ -8,6 +8,7 @@ ipykernel = "*"
 natasha = "*"
 pandas = "*"
 jupyter = "*"
+django = "*"
 
 [dev-packages]
 
