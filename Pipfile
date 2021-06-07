@@ -8,7 +8,6 @@ ipykernel = "*"
 natasha = "*"
 pandas = "*"
 jupyter = "*"
-torch = "*"
 
 [dev-packages]
 
