@@ -1,15 +1,31 @@
 import re
 import json
 import time
+import logging
 import numpy as np
 import pandas as pd 
 import natasha
 from natasha import Segmenter, MorphVocab, NewsEmbedding, NewsMorphTagger, NewsSyntaxParser, NewsNERTagger, PER, NamesExtractor, Doc
 
+logging.basicConfig(format='%(asctime)s %(levelname)s %(message)s', \
+                    filename='backend.log', \
+                    filemode='w', \
+                    encoding='utf-8', \
+                    level=logging.DEBUG)
+
+segmenter = Segmenter()
+morph_vocab = MorphVocab()
+emb = NewsEmbedding()
+morph_tagger = NewsMorphTagger(emb)
+syntax_parser = NewsSyntaxParser(emb)
+ner_tagger = NewsNERTagger(emb)
+names_extractor = NamesExtractor(morph_vocab)
+
 tokenCols = ['p_id', 'start', 'stop', 'text', 'token_id', 'head_id', 'rel', 'pos', 'lemma', 'anim', 'aspect', 'case', 'degree', 'gender', 'mood', 'number', 'person', 'tense', 'verb_form', 'voice']
 
 # function for applying all of natasha's morphological tagger components to tokens to make a TokenDf
 def nat_parse(textDf, textCol='text', columns=tokenCols): 
+    t0 = time.time()
     # initialize collective token dataframe
     tokenDf = pd.DataFrame(columns=columns)
     # gather row list
@@ -115,5 +131,7 @@ def nat_parse(textDf, textCol='text', columns=tokenCols):
             pDf = pd.DataFrame(pDict, columns=columns)
         # append section DF to collective DF
         tokenDf = pd.concat([tokenDf, pDf])
+    t1 = time.time()
+    logging.info(f"{t1-t0}")
     # return collective DF
     return tokenDf
