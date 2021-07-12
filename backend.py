@@ -6,9 +6,11 @@ import numpy as np
 import pandas as pd 
 import natasha
 from natasha import Segmenter, MorphVocab, NewsEmbedding, NewsMorphTagger, NewsSyntaxParser, NewsNERTagger, PER, NamesExtractor, Doc
+from tqdm.notebook import trange, tqdm
+import time
 
 logging.basicConfig(format='%(asctime)s %(levelname)s %(message)s', \
-                    filename='backend.log', \
+                    filename='logs/backend.log', \
                     filemode='w', \
                     encoding='utf-8', \
                     level=logging.DEBUG)
@@ -29,7 +31,7 @@ def nat_parse(textDf, textCol='text', columns=tokenCols):
     # initialize collective token dataframe
     tokenDf = pd.DataFrame(columns=columns)
     # gather row list
-    for an_id in textDf.index: 
+    for an_id in tqdm(textDf.index.to_list(), desc="Text DF Index id"): 
         # initialize list of token data dicts 
         pDict = []
         # create Natasha Doc object with text
@@ -46,7 +48,7 @@ def nat_parse(textDf, textCol='text', columns=tokenCols):
         # apply NER tagger
         doc.tag_ner(ner_tagger)
         # gather all tokens' data (excluding punctuation which Natasha treats as tokens)
-        for token in [x for x in doc.tokens if x.pos != 'PUNCT']: 
+        for token in tqdm([x for x in doc.tokens if x.pos != 'PUNCT'], desc="Token id", leave=False): 
             start = token.start
             stop = token.stop
             text = token.text
