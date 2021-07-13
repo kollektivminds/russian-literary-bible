@@ -137,3 +137,11 @@ def nat_parse(textDf, textCol='text', columns=tokenCols):
     logging.info(f"{t1-t0}")
     # return collective DF
     return tokenDf
+
+def GetRankDf(col='lemma', sourceDf=TokenDf, stop=False): 
+    if stop: 
+        sourceDf = TokenDf.loc[~TokenDf[tokenCols[9:]].isna().all(1)]
+    RankDf = sourceDf[col].value_counts().to_frame().rename(columns={col:'n'})
+    RankDf.index.name = col
+    RankDf['rank'] = np.arange(1,len(RankDf)+1)
+    return RankDf
