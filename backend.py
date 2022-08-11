@@ -6,6 +6,7 @@ import numpy as np
 import pandas as pd 
 import natasha
 from natasha import Segmenter, MorphVocab, NewsEmbedding, NewsMorphTagger, NewsSyntaxParser, NewsNERTagger, PER, NamesExtractor, Doc
+import tqdm
 from tqdm.notebook import trange, tqdm
 import time
 
