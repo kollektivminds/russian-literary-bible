@@ -139,9 +139,11 @@ def nat_parse(textDf, textCol='text', columns=tokenCols):
     # return collective DF
     return tokenDf
 
-def GetRankDf(sourceDf, col='lemma', stop=False): 
-    if stop: 
+def GetRankDf(TokenDf, col='lemma', no_stop=True): 
+    if no_stop: 
         sourceDf = TokenDf.loc[~TokenDf[tokenCols[9:]].isna().all(1)]
+    else:
+        sourceDf = TokenDf
     RankDf = sourceDf[col].value_counts().to_frame().rename(columns={col:'n'})
     RankDf.index.name = col
     RankDf['rank'] = np.arange(1,len(RankDf)+1)
