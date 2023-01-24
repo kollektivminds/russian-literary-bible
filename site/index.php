@@ -2,7 +2,7 @@
 
 <?php 
 include "templates/header.php";
-include "pages/body.html";
+include "pages/index.html";
 include "templates/footer.php";
 ?>
 
