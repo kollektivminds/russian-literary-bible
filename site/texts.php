@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
 <?php
-$pageTitle = "Home of RG Project"
+$pageTitle = "RG Texts"
 ?>
 
 <?php 
 include "templates/header.php";
-include "pages/index.html";
+include "pages/texts.html";
 include "templates/footer.php";
 ?>
 

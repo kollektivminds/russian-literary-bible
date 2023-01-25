@@ -4,7 +4,7 @@
 
    html {
     color: rgb(0, 0, 0);
-    background-color: rgb(255, 72, 72);
+    background-color: rgba(255, 72, 72, 0.5);
     font-size: 1em;
     line-height: 1.4;
   }
@@ -16,27 +16,30 @@
    */
 
    nav {
-    background-color: #000;
+    background-color: rgb(180, 68, 40, 0.5);
     color: #fff;
+    opacity: .9;
    }
 
   #nav-header {
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    align-content: space-between;
+    /* justify-content: right; */
     /* padding: 1rem; */
     /* margin: 1%; */
     width: 100%;
     /* height: 3%; */
   }
 
-  #nav-footer {
-    display: flex;
-    justify-content: center;
-  }
+   #nav-logo {
+    align-self: flex-start;
+   }
 
-  #nav-menu {
+   #nav-menu {
     display: flex;
+    align-content: flex-end;
+    justify-content: right;
     margin: 1rem;
   }
 
@@ -44,6 +47,12 @@
     list-style: none;
     margin: 1rem;
    }
+
+   #nav-footer {
+    display: flex;
+    justify-content: center;
+    opacity: .8;
+  }
 
    #copyright {
     text-align: center;
@@ -53,11 +62,17 @@
    * Body Contents
    */
   
-  div#page-contents {
-    /* border: 5px solid black; */
+   div#page-contents {
+    border: 3px solid black;
     padding: 1%;
     /* margin: 3%; */
   }
+
+   #homeheader {
+    text-align: center;
+    text-decoration: none;
+    text-emphasis: none;
+   }
   
    /*
    * Remove text-shadow in selection highlight:

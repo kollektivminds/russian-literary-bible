@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 
 <?php
+$pageTitle = "RG Bible"
+?>
+
+<?php
 include "templates/header.php";
 include "pages/about.html";
 
