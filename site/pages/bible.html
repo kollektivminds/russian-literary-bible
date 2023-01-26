@@ -32,19 +32,18 @@
     function getChaps(xhttp) {
         xmlDoc = xhttp.responseXML;
         txt = "<option value='#' selected='selected'>Select chapter</option>";
-        x = xmlDoc.getElementsByTagName("b")[window.bookNum];
+        x = xmlDoc.getElementsByTagName("b")[(window.bookNum-1)].getElementsByTagName("c");
         for (i = 0; i < x.length; i++) {
-            txt += "<option value='"+x[i]+"'>"+x[i]+"</option>";
+            txt += "<option value='"+x[i].getAttribute("name")+"'>"+x[i].getAttribute("name")+"</option>";
         }
         document.getElementById("chapterSelect").innerHTML = txt;
-        loadDoc(bibLoc, getVers);
     }
 
     // getVers() {}
     function getVers(xhttp) {
         xmlDoc = xhttp.responseXML;
         txt = "<option value='#' selected='selected'>Select verse</option>";
-        x = xmlDoc.getElementsByTagName("b")[(_chapName)];
+        x = xmlDoc.getElementsByTagName("b")[(window.bookNum-1)].getElementsByTagName("c")[(window.chapNum-1)].getElementsByTagName("v");
         for (i = 0; i < x.length; i++) {
             txt += "<option value='"+x[i].getAttribute("name")+"'>"+x[i].getAttribute("name")+"</option>";
         }
@@ -69,9 +68,18 @@
     $(document).ready(function () {
         $(document).on("change", "select[id='bookSelect']", function() {
             window.bookNum = $(this).val();
-            console.log(window._bookNum);
-            loadDoc(bibLoc, getChaps)
+            console.log(window.bookNum);
+            loadDoc(bibLoc, getChaps);
         })
+    
+    $(document).ready(function () {
+        $(document).on("change", "select[id='chapterSelect']", function() {
+            window.chapNum = $(this).val();
+            console.log(window.chapNum);
+            loadDoc(bibLoc, getVers);
+        })
+    })
+
     })
 
 </script>
