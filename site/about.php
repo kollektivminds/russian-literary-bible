@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 
 <?php
-$pageTitle = "About RG Project"
+include('templates/translations.php');
+include('templates/lang-trans.php');
 ?>
 
-<?php 
+<?php
 include "templates/header.php";
-include "pages/about.html";
+?>
+
+<h1><?php echo $about_content[$lang][0];?></h1>
+
+<p><?php echo $about_content[$lang][1];?></p>
+
+
+<?php
 include "templates/footer.php";
 ?>
 

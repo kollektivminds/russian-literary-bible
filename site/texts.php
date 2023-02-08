@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 
 <?php
-$pageTitle = "RG Texts"
+include('templates/translations.php');
+include('templates/lang-trans.php');
 ?>
 
-<?php 
+<?php
 include "templates/header.php";
-include "pages/texts.html";
+?>
+
+
+
+<?php
 include "templates/footer.php";
 ?>
 
