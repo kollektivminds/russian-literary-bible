@@ -1,0 +1,465 @@
+{
+    "1": {
+        "rus_name": "Книга Бытия",
+        "eng_name": "Genesis",
+        "rus_abbr": "Быт",
+        "eng_abbr": "Gen"
+    },
+    "2": {
+        "rus_name": "Книга Исход",
+        "eng_name": "Exodus",
+        "rus_abbr": "Исх",
+        "eng_abbr": "Ex"
+    },
+    "3": {
+        "rus_name": "Книга Левит",
+        "eng_name": "Leviticus",
+        "rus_abbr": "Лев",
+        "eng_abbr": "Lev"
+    },
+    "4": {
+        "rus_name": "Книга Числа",
+        "eng_name": "Numbers",
+        "rus_abbr": "Чис",
+        "eng_abbr": "Num"
+    },
+    "5": {
+        "rus_name": "Второзаконие",
+        "eng_name": "Deuteronomy",
+        "rus_abbr": "Втор",
+        "eng_abbr": "Deut"
+    },
+    "6": {
+        "rus_name": "Книга Иисуса Навина",
+        "eng_name": "Joshua",
+        "rus_abbr": "Нав",
+        "eng_abbr": "Josh"
+    },
+    "7": {
+        "rus_name": "Книга Судей Израилевых",
+        "eng_name": "Judges",
+        "rus_abbr": "Суд",
+        "eng_abbr": "Judg"
+    },
+    "8": {
+        "rus_name": "Книга Руфь",
+        "eng_name": "Ruth",
+        "rus_abbr": "Руф",
+        "eng_abbr": "Ruth"
+    },
+    "9": {
+        "rus_name": "Первая книга Царств",
+        "eng_name": "1 Samuel",
+        "rus_abbr": "1Цар",
+        "eng_abbr": "1Sam"
+    },
+    "10": {
+        "rus_name": "Вторая книга Царств",
+        "eng_name": "2 Samuel",
+        "rus_abbr": "2Цар",
+        "eng_abbr": "2Sam"
+    },
+    "11": {
+        "rus_name": "Третья книга Царств",
+        "eng_name": "1 Kings",
+        "rus_abbr": "3Цар",
+        "eng_abbr": "1Kings"
+    },
+    "12": {
+        "rus_name": "Четвёртая книга Царств",
+        "eng_name": "2 Kings",
+        "rus_abbr": "4Цар",
+        "eng_abbr": "2Kings"
+    },
+    "13": {
+        "rus_name": "1-я Паралипоменон",
+        "eng_name": "1 Chronicles",
+        "rus_abbr": "1Пар",
+        "eng_abbr": "1Chron"
+    },
+    "14": {
+        "rus_name": "2-я Паралипоменон",
+        "eng_name": "2 Chronicles",
+        "rus_abbr": "2Пар",
+        "eng_abbr": "2Chron"
+    },
+    "15": {
+        "rus_name": "Первая книга Ездры",
+        "eng_name": "First Ezra",
+        "rus_abbr": "1Езд",
+        "eng_abbr": "1Ezra"
+    },
+    "16": {
+        "rus_name": "Книга Неемии",
+        "eng_name": "Nehemiah",
+        "rus_abbr": "Неем",
+        "eng_abbr": "Neh"
+    },
+    "17": {
+        "rus_name": "Вторая книга Ездры",
+        "eng_name": "Second Ezra",
+        "rus_abbr": "2Езд",
+        "eng_abbr": "2Ezra"
+    }, 
+    "18": {
+        "rus_name": "Книга Товита",
+        "eng_name": "Tobit",
+        "rus_abbr": "Тов",
+        "eng_abbr": "Tob"
+    },
+    "19": {
+        "rus_name": "Книга Иудифи",
+        "eng_name": "Judith",
+        "rus_abbr": "Иуд",
+        "eng_abbr": "Jud"
+    },
+    "20": {
+        "rus_name": "Книга Есфири",
+        "eng_name": "Esther",
+        "rus_abbr": "Есф",
+        "eng_abbr": "Esther"
+    }, 
+    "21": {
+        "rus_name": "Книга Иова",
+        "eng_name": "Job",
+        "rus_abbr": "Иов",
+        "eng_abbr": "Job"
+    },
+    "22": {
+        "rus_name": "Псалтирь",
+        "eng_name": "Psalms",
+        "rus_abbr": "Пс",
+        "eng_abbr": "Ps"
+    },
+    "23": {
+        "rus_name": "Книга притчей Соломоновых",
+        "eng_name": "Proverbs",
+        "rus_abbr": "Прит",
+        "eng_abbr": "Prov"
+    },
+    "24": {
+        "rus_name": "Книга Екклесиаста",
+        "eng_name": "Ecclesiastes",
+        "rus_abbr": "Екк",
+        "eng_abbr": "Eccles"
+    },
+    "25": {
+        "rus_name": "Песнь песней Соломона",
+        "eng_name": "Song of Solomon  (Song of Songs)",
+        "rus_abbr": "Песн",
+        "eng_abbr": "Song"
+    },
+    "26": {
+        "rus_name": "Книга Премудрости Соломона",
+        "eng_name": "Wisdom of Solomon",
+        "rus_abbr": "ПремСол",
+        "eng_abbr": "WisdSol"
+    },
+    "27": {
+        "rus_name": "Книга премудрости Иисуса, сына Сирахова",
+        "eng_name": "Sirach (Ecclesiasticus)",
+        "rus_abbr": "ПремИис",
+        "eng_abbr": "WisdJus"
+    },
+    "28": {
+        "rus_name": "Книга пророка Исаии",
+        "eng_name": "Isaiah",
+        "rus_abbr": "Ис",
+        "eng_abbr": "Is"
+    },
+    "29": {
+        "rus_name": "Книга пророка Иеремии",
+        "eng_name": "Jeremiah",
+        "rus_abbr": "Иер",
+        "eng_abbr": "Jer"
+    },
+    "30": {
+        "rus_name": "Плач Иеремии",
+        "eng_name": "Lamentations",
+        "rus_abbr": "Плач",
+        "eng_abbr": "Lam"
+    },
+    "31": {
+        "rus_name": "Послание Иеремии",
+        "eng_name": "Letter of Jeremiah", 
+        "rus_abbr": "Иер",
+        "eng_abbr": "Jer"
+    },
+    "32": {
+        "rus_name": "Книга пророка Варуха",
+        "eng_name": "Baruch", 
+        "rus_abbr": "Вар",
+        "eng_abbr": "Bar"
+    },
+    "33": {
+        "rus_name": "Книга пророка Иезекииля",
+        "eng_name": "Ezekiel",
+        "rus_abbr": "Иез",
+        "eng_abbr": "Ezek"
+    },
+    "34": {
+        "rus_name": "Книга пророка Даниила",
+        "eng_name": "Daniel",
+        "rus_abbr": "Дан",
+        "eng_abbr": "Dan"
+    },
+    "35": {
+        "rus_name": "Книга пророка Осии",
+        "eng_name": "Hosea",
+        "rus_abbr": "Ос",
+        "eng_abbr": "Hos"
+    },
+    "36": {
+        "rus_name": "Книга пророка Иоиля",
+        "eng_name": "Joel",
+        "rus_abbr": "Иоил",
+        "eng_abbr": "Joel"
+    },
+    "37": {
+        "rus_name": "Книга пророка Амоса",
+        "eng_name": "Amos",
+        "rus_abbr": "Амос",
+        "eng_abbr": "Amos"
+    },
+    "38": {
+        "rus_name": "Книга пророка Авдия",
+        "eng_name": "Obadiah",
+        "rus_abbr": "Авд",
+        "eng_abbr": "Obad"
+    },
+    "39": {
+        "rus_name": "Книга пророка Ионы",
+        "eng_name": "Jonah",
+        "rus_abbr": "Иона",
+        "eng_abbr": "Jon"
+    },
+    "40": {
+        "rus_name": "Книга пророка Михея",
+        "eng_name": "Micah",
+        "rus_abbr": "Мих",
+        "eng_abbr": "Mic"
+    },
+    "41": {
+        "rus_name": "Книга пророка Наума",
+        "eng_name": "Nahum",
+        "rus_abbr": "Наум",
+        "eng_abbr": "Nahum"
+    },
+    "42": {
+        "rus_name": "Книга пророка Аввакума",
+        "eng_name": "Habakkuk",
+        "rus_abbr": "Авв",
+        "eng_abbr": "Hab"
+    },
+    "43": {
+        "rus_name": "Книга пророка Софонии",
+        "eng_name": "Zephaniah",
+        "rus_abbr": "Соф",
+        "eng_abbr": "Zeph"
+    },
+    "44": {
+        "rus_name": "Книга пророка Аггея",
+        "eng_name": "Haggai",
+        "rus_abbr": "Агг",
+        "eng_abbr": "Hag"
+    },
+    "45": {
+        "rus_name": "Книга пророка Захарии",
+        "eng_name": "Zechariah",
+        "rus_abbr": "Зах",
+        "eng_abbr": "Zech"
+    },
+    "46": {
+        "rus_name": "Книга пророка Малахии",
+        "eng_name": "Malachi",
+        "rus_abbr": "Мал",
+        "eng_abbr": "Mal"
+    },
+    "47": {
+        "rus_name": "Первая книга Маккавейская",
+        "eng_name": "1 Maccabees",
+        "rus_abbr": "1Мак",
+        "eng_abbr": "1Mac"
+
+    },
+    "48": {
+        "rus_name": "Вторая книга Маккавейская",
+        "eng_name": "2 Maccabees",
+        "rus_abbr": "2Мак",
+        "eng_abbr": "2Mac"
+    },
+    "49": {
+        "rus_name": "Третья книга Маккавейская",
+        "eng_name": "3 Maccabees",
+        "rus_abbr": "3Мак",
+        "eng_abbr": "3Mac"
+    },
+    "50": {
+        "rus_name": "Третья книга Ездры",
+        "eng_name": "3 Esdras",
+        "rus_abbr": "3Езд",
+        "eng_abbr": "3Esd"
+    },
+    "51": {
+        "rus_name": "Евангелие от Матфея",
+        "eng_name": "Gospel of Matthew",
+        "rus_abbr": "Мф",
+        "eng_abbr": "Mt"
+    },
+    "52": {
+        "rus_name": "Евангелие от Марка",
+        "eng_name": "Gospel of Mark",
+        "rus_abbr": "Мк",
+        "eng_abbr": "Mk"
+    },
+    "53": {
+        "rus_name": "Евангелие от Луки",
+        "eng_name": "Gospel of Luke",
+        "rus_abbr": "Лк",
+        "eng_abbr": "Lk"
+    },
+    "54": {
+        "rus_name": "Евангелие от Иоанна",
+        "eng_name": "Gospel of John",
+        "rus_abbr": "Ин",
+        "eng_abbr": "Jn"
+    },
+    "55": {
+        "rus_name": "Деяния святых апостолов",
+        "eng_name": "Acts of the Apostles",
+        "rus_abbr": "Деян",
+        "eng_abbr": "Acts"
+    },
+    "56": {
+        "rus_name": "Послание Иакова",
+        "eng_name": "Epistle of James",
+        "rus_abbr": "Иак",
+        "eng_abbr": "Jas"
+    },
+    "57": {
+        "rus_name": "1-е послание Петра",
+        "eng_name": "First Epistle of Peter",
+        "rus_abbr": "1Пет",
+        "eng_abbr": "1Pet"
+    },
+    "58": {
+        "rus_name": "2-е послание Петра",
+        "eng_name": "Second Epistle of Peter",
+        "rus_abbr": "2Пет",
+        "eng_abbr": "2Pet"
+    },
+    "59": {
+        "rus_name": "1-е послание Иоанна",
+        "eng_name": "First Epistle of John",
+        "rus_abbr": "1Ин",
+        "eng_abbr": "1Jn"
+    },
+    "60": {
+        "rus_name": "2-е послание Иоанна",
+        "eng_name": "Second Epistle of John",
+        "rus_abbr": "2Ин",
+        "eng_abbr": "2Jn"
+    },
+    "61": {
+        "rus_name": "3-е послание Иоанна",
+        "eng_name": "Third Epistle of John",
+        "rus_abbr": "3Ин",
+        "eng_abbr": "3Jn"
+    },
+    "62": {
+        "rus_name": "Послание Иуды",
+        "eng_name": "Epistle of Jude",
+        "rus_abbr": "Иуд",
+        "eng_abbr": "Jude"
+    },
+    "63": {
+        "rus_name": "Послание к Римлянам",
+        "eng_name": "Epistle to the Romans",
+        "rus_abbr": "Рим",
+        "eng_abbr": "Rom"
+    },
+    "64": {
+        "rus_name": "1-е послание к Коринфянам",
+        "eng_name": "First Epistle to the Corinthians",
+        "rus_abbr": "1 Кор",
+        "eng_abbr": "1 Cor"
+    },
+    "65": {
+        "rus_name": "2-е послание к Коринфянам",
+        "eng_name": "Second Epistle to the Corinthians",
+        "rus_abbr": "2 Кор",
+        "eng_abbr": "2 Cor"
+    },
+    "66": {
+        "rus_name": "Послание к Галатам",
+        "eng_name": "Epistle to the Galatians",
+        "rus_abbr": "Гал",
+        "eng_abbr": "Gal"
+    },
+    "67": {
+        "rus_name": "Послание к Ефесянам",
+        "eng_name": "Epistle to the Ephesians",
+        "rus_abbr": "Еф",
+        "eng_abbr": "Eph"
+    },
+    "68": {
+        "rus_name": "Послание к Филиппийцам",
+        "eng_name": "Epistle to the Philippians",
+        "rus_abbr": "Флп",
+        "eng_abbr": "Phil"
+    },
+    "69": {
+        "rus_name": "Послание к Колоссянам",
+        "eng_name": "Epistle to the Colossians",
+        "rus_abbr": "Кол",
+        "eng_abbr": "Col"
+    },
+    "70": {
+        "rus_name": "1-е послание к Фессалоникийцам",
+        "eng_name": "First Epistle to the Thessalonians",
+        "rus_abbr": "1Фес",
+        "eng_abbr": "1Thess"
+    },
+    "71": {
+        "rus_name": "2-е послание к Фессалоникийцам",
+        "eng_name": "Second Epistle to the Thessalonians",
+        "rus_abbr": "2Фес",
+        "eng_abbr": "2Thess"
+    },
+    "72": {
+        "rus_name": "1-е послание к Тимофею",
+        "eng_name": "First Epistle to Timothy",
+        "rus_abbr": "1Тим",
+        "eng_abbr": "1Tim"
+    },
+    "73": {
+        "rus_name": "2-е послание к Тимофею",
+        "eng_name": "Second Epistle to Timothy",
+        "rus_abbr": "2Тим",
+        "eng_abbr": "2Tim"
+    },
+    "74": {
+        "rus_name": "Послание к Титу",
+        "eng_name": "Epistle to Titus",
+        "rus_abbr": "Тит",
+        "eng_abbr": "Tit"
+    },
+    "75": {
+        "rus_name": "Послание к Филимону",
+        "eng_name": "Epistle to Philemon",
+        "rus_abbr": "Флм",
+        "eng_abbr": "Philem"
+    },
+    "76": {
+        "rus_name": "Послание к Евреям",
+        "eng_name": "Epistle to the Hebrews",
+        "rus_abbr": "Евр",
+        "eng_abbr": "Heb"
+    },
+    "77": {
+        "rus_name": "Откровение Иоанна Богослова",
+        "eng_name": "Book of Revelation",
+        "rus_abbr": "Откр",
+        "eng_abbr": "Rev"
+    }
+}
