@@ -31,7 +31,7 @@ include "templates/header.php";
     // getBooks(xhttp) {}
     function getBooks(xhttp) {
         xmlDoc = xhttp.responseXML;
-        txt = "<option value='#' selected='selected'><?php echo $bible_content[$lang][4];?></option>";
+        txt = "<option value='#' selected='selected'><?php echo $bible_content[$lang][3];?></option>";
         x = xmlDoc.getElementsByTagName("b");
         for (i = 0; i < x.length; i++) {
             txt += "<option value='"+x[i].getAttribute("n")+"'>"+x[i].getAttribute("name")+"</option>";
@@ -42,7 +42,7 @@ include "templates/header.php";
     // getChaps() {}
     function getChaps(xhttp) {
         xmlDoc = xhttp.responseXML;
-        txt = "<option value='#' selected='selected'>Select chapter</option>";
+        txt = "<option value='#' selected='selected'><?php echo $bible_content[$lang][4];?></option>";
         x = xmlDoc.getElementsByTagName("b")[(window.bookNum-1)].getElementsByTagName("c");
         for (i = 0; i < x.length; i++) {
             txt += "<option value='"+x[i].getAttribute("name")+"'>"+x[i].getAttribute("name")+"</option>";
@@ -53,7 +53,7 @@ include "templates/header.php";
     // getVers() {}
     function getVers(xhttp) {
         xmlDoc = xhttp.responseXML;
-        txt = "<option value='#' selected='selected'>Select verse</option>";
+        txt = "<option value='#' selected='selected'><?php echo $bible_content[$lang][5];?></option>";
         x = xmlDoc.getElementsByTagName("b")[(window.bookNum-1)].getElementsByTagName("c")[(window.chapNum-1)].getElementsByTagName("v");
         for (i = 0; i < x.length; i++) {
             txt += "<option value='"+x[i].getAttribute("name")+"'>"+x[i].getAttribute("name")+"</option>";
