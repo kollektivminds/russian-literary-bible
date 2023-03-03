@@ -11,7 +11,41 @@ include "templates/header.php";
 
 <h1><?php echo $bible_content[$lang][0];?></h1>
 
+<!-- <script type="text/json" src="data/booksDict.json"></script> -->
 <script>
+    // var bibRef = JSON.parse(booksDict);
+
+    $(function() {
+        
+        $.getJSON( "data/booksDict.json", function( json ){
+            //const bibBooks = JSON.parse(json);
+            const bibBooks = json;
+            const bookIDs = Object.keys(json).map(function(key) {
+                console.log(bibBooks[key].<?php echo $lang?>_name);
+            });
+        });
+
+        $("bookSelect").ready(function() {
+            txt = "<option value='#' selected='selected'><?php echo $bible_content[$lang][5];?></option>";
+            console.log(bookIDs);
+        });
+
+        $("#bookSelect").change(function(event) {
+            $('#chapterSelect').prop('selected', function() {
+                return this.defaultSelected;
+            });
+            $('#verseSelect').prop('selected', function() {
+                return this.defaultSelected;
+            });
+        });
+        
+        $("chapterSelect").change(function(event) {
+            $('#verseSelect').prop('selected', function() {
+                return this.defaultSelected;
+            });
+        });
+    });
+
 
     var bibLoc = 'data/bible.xml';
 
@@ -119,6 +153,7 @@ include "templates/header.php";
 <hr>
 <div id="results">
     <p><?php echo $bible_content[$lang][7];?>:</p>
+    <div id="results-text"></div>
 </div>
 
 <?php
