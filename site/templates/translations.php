@@ -22,12 +22,12 @@ $nav_menu=array(
 
 $index_content=array(
 	'en'=>array(
-        'A Revolutionary Gospel:<br>Secular Transpositions of Orthodox Narrative<br>and the Post-Christian Coming of the New Soviet Person (1892-1917)',
+        'A Revolutionary Gospel:<br>Orthodox Origins of Russian Socialist Literature',
 		'This is the homepage of the <em>Revolutionary Gospel</em> digital project prepared by <a href="https://www.aaronmthompson.net">Aaron M. Thompson</a>.'
     ),
 	'ru'=>array(
-        'Евангелие революции:<br>Секулярные переложения православных сюжетов<br>и пост-христианское пришествие Нового Советского Человека (1892-1917)',
-		'Вы попали на главную страницу проекта <em>Евангелие революции</em>, приготовленного <a href="https://www.aaronmthompson.net">Эроном Томпсоном</a>.'
+        'Революционное Евангелие: <br>Православное происхождение русской социалистической литературой',
+		'Вы попали на главную страницу проекта <em>Революционное Евангелие</em>, приготовленного <a href="https://www.aaronmthompson.net">Эроном Томпсоном</a>.'
     )
 );
 
@@ -44,7 +44,7 @@ $bible_content=array(
 	'en'=>array(
 		'The Russian Synodal Bible',
 		'Search a word or phrase to see how it has been used.',
-		' Pick the section to read below to see how it has been used by Russian literature, philosophy, and politics.',
+		'Pick the section to read below to see how it has been used by Russian literature, philosophy, and politics.',
 		'Book',
 		'Select',
 		'Chapter',
@@ -53,7 +53,7 @@ $bible_content=array(
 	),
 	'ru'=>array(
 		'Православная Библия: Синодальный перевод',
-		'Искать по словам или фразам чтобы посмотреть как используется в Библии.',
+		'Искать по словам или фразам, чтобы посмотреть как используется в Библии.',
 		'Выберите книгу, главу, стих, чтобы посмотреть, как часть используется в русской литературе, философии и полтике.',
 		'Книга',
 		'Выбрать',
@@ -65,7 +65,7 @@ $bible_content=array(
 
 $texts_content=array(
 	'en'=>array('Home of RG Project'),
-	'ru'=>array('Главная страница проекта РП')
+	'ru'=>array('Главная страница проекта РЕ')
 );
 
 ?>

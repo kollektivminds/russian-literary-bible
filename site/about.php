@@ -6,7 +6,7 @@ include('templates/lang-trans.php');
 ?>
 
 <?php
-include "templates/header.php";
+include('templates/header.php');
 ?>
 
 <h1><?php echo $about_content[$lang][0];?></h1>
@@ -15,7 +15,7 @@ include "templates/header.php";
 
 
 <?php
-include "templates/footer.php";
+include('templates/footer.php');
 ?>
 
 </html>

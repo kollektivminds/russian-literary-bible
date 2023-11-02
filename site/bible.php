@@ -13,21 +13,21 @@ include "templates/header.php";
 
 <!-- <script type="text/json" src="data/booksDict.json"></script> -->
 <script>
-    // var bibRef = JSON.parse(booksDict);
 
     $(function() {
         
         $.getJSON( "data/booksDict.json", function( json ){
             //const bibBooks = JSON.parse(json);
             const bibBooks = json;
-            const bookIDs = Object.keys(json).map(function(key) {
+            var bookArray = [];
+            var bookArray = Object.keys(json).map(function(key) {
                 console.log(bibBooks[key].<?php echo $lang?>_name);
             });
         });
 
         $("bookSelect").ready(function() {
             txt = "<option value='#' selected='selected'><?php echo $bible_content[$lang][5];?></option>";
-            console.log(bookIDs);
+            //console.log(bookArray);
         });
 
         $("#bookSelect").change(function(event) {
@@ -41,7 +41,7 @@ include "templates/header.php";
         
         $("chapterSelect").change(function(event) {
             $('#verseSelect').prop('selected', function() {
-                return this.defaultSelected;
+              return this.defaultSelected;
             });
         });
     });
@@ -136,16 +136,20 @@ include "templates/header.php";
     <input type="submit" />
 </form>
 
+<hr>
+
 <p><?php echo $bible_content[$lang][2];?></p>
     
 <form name="biblePartSelector" id="bibleSelect" action="">
 <?php echo $bible_content[$lang][3];?>: 
-    <select name="book" id="bookSelect" onchange=""><?php echo $bible_content[$lang][4];?></select>
-    <?php echo $bible_content[$lang][5];?>:
-    <select name="chapter" id="chapterSelect">
+    <select name="book" id="bookSelect" onchange="">
+        <option value="" selected="selected"><?php echo $bible_content[$lang][3];?></option>
+    </select>    
+<?php echo $bible_content[$lang][5];?>:
+    <select name="chapter" id="chapterSelect" onchange="">
         <option value="" selected="selected"><?php echo $bible_content[$lang][4];?></option>
     </select>
-    <?php echo $bible_content[$lang][6];?>: 
+<?php echo $bible_content[$lang][6];?>: 
     <select name="verse" id="verseSelect">
         <option value="" selected="selected"><?php echo $bible_content[$lang][4];?></option>
     </select>
