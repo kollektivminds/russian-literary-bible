@@ -20,9 +20,8 @@ include "templates/header.php";
             //const bibBooks = JSON.parse(json);
             const bibBooks = json;
             var bookArray = [];
-            var bookArray = Object.keys(json).map(function(key) {
-                console.log(bibBooks[key].<?php echo $lang?>_name);
-            });
+            Object.keys(json).map(function(key) {bookArray.push(bibBooks[key].<?php echo $lang?>_name)});
+            console.log(bookArray);
         });
 
         $("bookSelect").ready(function() {
@@ -68,7 +67,7 @@ include "templates/header.php";
         txt = "<option value='#' selected='selected'><?php echo $bible_content[$lang][3];?></option>";
         x = xmlDoc.getElementsByTagName("b");
         for (i = 0; i < x.length; i++) {
-            txt += "<option value='"+x[i].getAttribute("n")+"'>"+x[i].getAttribute("name")+"</option>";
+            txt += "<option value='"+x[i].getAttribute("n")+"'>"+x[i].getAttribute("name_<?php echo $lang;?>")+"</option>";
         }
         document.getElementById("bookSelect").innerHTML = txt;
     }
