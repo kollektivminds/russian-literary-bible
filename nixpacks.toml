@@ -1,0 +1,19 @@
+[phases.setup]
+nixPkgs = ['npm', 'python']
+
+[phases.build]
+cmds = ['yarn run server:build']
+
+[start]
+cmd = 'yarn run server:start'
+
+providers = ['...', 'python']
+
+[variables]
+NODE_ENV = 'production'
+HELLO = 'world'
+
+[staticAssets]
+myFile = '''
+  asdfasdfasdf
+'''
