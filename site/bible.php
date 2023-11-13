@@ -9,124 +9,69 @@ include('templates/lang-trans.php');
 include "templates/header.php";
 ?>
 
-<h1><?php echo $bible_content[$lang][0];?></h1>
-
-<!-- <script type="text/json" src="data/booksDict.json"></script> -->
 <script>
 
-    $(function() {
-        
-        $.getJSON( "data/booksDict.json", function( json ){
-            //const bibBooks = JSON.parse(json);
-            const bibBooks = json;
-            var bookArray = [];
-            Object.keys(json).map(function(key) {bookArray.push(bibBooks[key].<?php echo $lang?>_name)});
+    window.onload = function () {
+
+        bookArray = [];
+        //console.log(bookArray);
+        //console.log("window.ready");
+                
+        $.getJSON("data/booksDict.json", function(data) {
+            json = data;
+            console.log(json);
+            bookArray = []
+            $.each( data, function( key,val ) {
+                //console.log(key);
+                //console.log(data[key]["ru_name"]);
+                bookArray.push(data[key]["<?php echo $lang?>_name"]);
+            });
             console.log(bookArray);
-        });
-
-        $("bookSelect").ready(function() {
-            txt = "<option value='#' selected='selected'><?php echo $bible_content[$lang][5];?></option>";
-            //console.log(bookArray);
-        });
-
-        $("#bookSelect").change(function(event) {
-            $('#chapterSelect').prop('selected', function() {
-                return this.defaultSelected;
-            });
-            $('#verseSelect').prop('selected', function() {
-                return this.defaultSelected;
-            });
-        });
-        
-        $("chapterSelect").change(function(event) {
-            $('#verseSelect').prop('selected', function() {
-              return this.defaultSelected;
-            });
-        });
-    });
-
-
-    var bibLoc = 'data/bible.xml';
-
-    // example: loadDoc("url", myFunction);
-    function loadDoc(url, cFunction) {
-        var xhttp;
-        xhttp=new XMLHttpRequest();
-        xhttp.onreadystatechange=function() {
-            if (this.readyState==4 && this.status==200) {
-                cFunction(this);
+            txt = "<option value='#' selected='selected'></option>";
+            for (i = 0; i < bookArray.length; i++) {
+                txt += "<option value='"+(i+1)+"'>"+bookArray[i]+"</option>";
             }
-        };
-        xhttp.open("GET", url, true);
-        xhttp.send();
-    }
-
-    // getBooks(xhttp) {}
-    function getBooks(xhttp) {
-        xmlDoc = xhttp.responseXML;
-        txt = "<option value='#' selected='selected'><?php echo $bible_content[$lang][3];?></option>";
-        x = xmlDoc.getElementsByTagName("b");
-        for (i = 0; i < x.length; i++) {
-            txt += "<option value='"+x[i].getAttribute("n")+"'>"+x[i].getAttribute("name_<?php echo $lang;?>")+"</option>";
-        }
-        document.getElementById("bookSelect").innerHTML = txt;
-    }
+            document.getElementById("bookSelect").innerHTML = txt;
+        });
+    };
     
-    // getChaps() {}
-    function getChaps(xhttp) {
-        xmlDoc = xhttp.responseXML;
-        txt = "<option value='#' selected='selected'><?php echo $bible_content[$lang][4];?></option>";
-        x = xmlDoc.getElementsByTagName("b")[(window.bookNum-1)].getElementsByTagName("c");
-        for (i = 0; i < x.length; i++) {
-            txt += "<option value='"+x[i].getAttribute("name")+"'>"+x[i].getAttribute("name")+"</option>";
-        }
-        document.getElementById("chapterSelect").innerHTML = txt;
-    }
-
-    // getVers() {}
-    function getVers(xhttp) {
-        xmlDoc = xhttp.responseXML;
-        txt = "<option value='#' selected='selected'><?php echo $bible_content[$lang][5];?></option>";
-        x = xmlDoc.getElementsByTagName("b")[(window.bookNum-1)].getElementsByTagName("c")[(window.chapNum-1)].getElementsByTagName("v");
-        for (i = 0; i < x.length; i++) {
-            txt += "<option value='"+x[i].getAttribute("name")+"'>"+x[i].getAttribute("name")+"</option>";
-        }
-        document.getElementById("verseSelect").innerHTML = txt;
-    }
-
-    function showBible(str) {
-        if (str=="") {
-            document.getElementById("results").innerHTML="";
-            return;
-        }
-        
-    }
-    
-    window.onload = function() {
-
-        // load books list
-        loadDoc(bibLoc, getBooks);
-        
-    }
-
     $(document).ready(function () {
         $(document).on("change", "select[id='bookSelect']", function() {
             window.bookNum = $(this).val();
-            console.log(window.bookNum);
-            loadDoc(bibLoc, getChaps);
-        })
-    
+            console.log("bookNum: "+window.bookNum);
+            chapLen = Object.keys(json[window.bookNum-1].chap_verse).length
+            console.log(chapLen)
+            txt = "<option value='#' selected='selected'></option>";
+            for (i = 0; i < chapLen; i++) {
+                txt += "<option value='"+(i+1)+"'>"+(i+1)+"</option>";
+            }
+            document.getElementById("chapterSelect").innerHTML = txt;
+        });
+    });
     $(document).ready(function () {
         $(document).on("change", "select[id='chapterSelect']", function() {
             window.chapNum = $(this).val();
-            console.log(window.chapNum);
-            loadDoc(bibLoc, getVers);
-        })
-    })
-
-    })
-
+            console.log("chapNum: "+window.chapNum);
+            chapVers = json[window.bookNum-1].chap_verse[chapNum]
+            console.log(chapVers)
+            txt = "<option value='#' selected='selected'></option>";
+            for (i = 0; i < chapVers; i++) {
+                txt += "<option value='"+(i+1)+"'>"+(i+1)+"</option>";
+            }
+            document.getElementById("verseSelect").innerHTML = txt;
+        });
+    });
+    $(document).ready(function() {
+        $(document).on("change", "select[id='verseSelect']", function() {
+            window.versNum = $(this).val();
+            console.log("versNum: "+window.versNum);
+        });
+    });
 </script>
+
+
+
+<h1><?php echo $bible_content[$lang][0];?></h1>
 
 <p><?php echo $bible_content[$lang][1];?></p>
 
@@ -136,6 +81,8 @@ include "templates/header.php";
 </form>
 
 <hr>
+
+
 
 <p><?php echo $bible_content[$lang][2];?></p>
     
@@ -149,14 +96,62 @@ include "templates/header.php";
         <option value="" selected="selected"><?php echo $bible_content[$lang][4];?></option>
     </select>
 <?php echo $bible_content[$lang][6];?>: 
-    <select name="verse" id="verseSelect">
+    <select name="verse" id="verseSelect" onchange="">
         <option value="" selected="selected"><?php echo $bible_content[$lang][4];?></option>
     </select>
 </form> 
 <hr>
 <div id="results">
     <p><?php echo $bible_content[$lang][7];?>:</p>
-    <div id="results-text"></div>
+    <div id="results-text">
+    <?php
+
+    $contents = " ";
+
+    // Initialize the XML parser
+    $parser=xml_parser_create();
+
+    // Function to use at the start of an element
+    function start($parser,$element_name,$element_attrs) {
+        echo "$element_name:$element_attrs<br>";
+        switch($element_name) {
+            case "v":
+            echo "-- Note --<br>";
+            break;
+        }
+    }
+
+    // Function to use at the end of an element
+    function stop($parser,$element_name) {
+    echo "<br><hr>";
+    }
+
+    // Function to use when finding character data
+    function char($parser,$data) {
+    echo $data;
+    }
+
+    // Specify element handler
+    xml_set_element_handler($parser,"start","stop");
+
+    // Specify data handler
+    xml_set_character_data_handler($parser,"char");
+
+    // Open XML file
+    $fp=fopen("data/bible.xml","r");
+
+    // Read data
+    while ($data=fread($fp,4096)) {
+    xml_parse($parser,$data,feof($fp)) or
+    die (sprintf("XML Error: %s at line %d",
+    xml_error_string(xml_get_error_code($parser)),
+    xml_get_current_line_number($parser)));
+    }
+
+    // Free the XML parser
+    xml_parser_free($parser);
+    ?> 
+    </div>
 </div>
 
 <?php
