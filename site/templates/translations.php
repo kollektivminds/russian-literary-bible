@@ -26,8 +26,8 @@ $index_content=array(
 		'This is the homepage of the <em>Revolutionary Gospel</em> digital project prepared by <a href="https://www.aaronmthompson.net">Aaron M. Thompson</a>.'
     ),
 	'ru'=>array(
-        'Революционное Евангелие: <br>Православное происхождение русской социалистической литературой',
-		'Вы попали на главную страницу проекта <em>Революционное Евангелие</em>, приготовленного <a href="https://www.aaronmthompson.net">Эроном Томпсоном</a>.'
+        'Революционное Евангелие: <br>Православное происхождение русской социалистической литературы',
+		'Вы попали на главную страницу проекта «Революционное Евангелие», приготовленного <a href="https://www.aaronmthompson.net">Эроном Томпсоном</a>.'
     )
 );
 

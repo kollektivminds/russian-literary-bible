@@ -4,7 +4,7 @@
 
    html {
     color: rgb(0, 0, 0);
-    background-color: rgba(255, 72, 72, 0.5);
+    background-color: rgb(243, 218, 195);
     font-size: 1em;
     line-height: 1.4;
   }
@@ -16,7 +16,7 @@
    */
 
    nav {
-    background-color: rgb(180, 68, 40, 0.5);
+    background-color: rgba(232, 221, 221, 0.5);
     color: #fff;
     opacity: .9;
    }
