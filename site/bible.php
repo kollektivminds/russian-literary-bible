@@ -182,7 +182,7 @@ include "templates/header.php";
 
     // process textXml
     if(empty($_GET["book"])) {
-        $randBook = rand(1,77);
+        //$randBook = rand(1,77);
         $textXml = $myXml->xpath("b[@n='1']")[0]->children()[0];
         //print_r($textXml);
         for ($i=1; $i < $textXml->children()->count(); $i++) { 
