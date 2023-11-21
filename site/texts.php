@@ -26,12 +26,14 @@ include "templates/header.php";
                 $(this).find('chapter').each(function() {
                     var _chapName = $(this).attr("name");
                     var _chapN = $(this).attr("n");
-                    console.log(_chapN);
+                    //console.log(_chapN);
                     _chapDict[_chapName] = _chapN;
-                    $("#textDisplay").append("<h3 id='"+_chapN+"' class='workChapName'>"+_chapName+"</h3>");
+                    $("#textDisplay").append("<div id='"+_chapN+"' class='chapText'><h3 id='"+_chapN+"' class='workChapName'>"+_chapName+"</h3>");
+                    //$("#textDisplay").append("");
                     $(this).find('paragraph').each(function () {
                         $("#textDisplay").append("<p class='work'>"+$(this).text()+"</p>");
-                    });
+                    })
+                    $("#textDisplay").append("</div>");
                 });
                 $("#navDisplay").append("<p>Part "+_partName+": ");
                 $.each(_chapDict, function( k , v ) {
@@ -45,61 +47,16 @@ include "templates/header.php";
             }
     });
 
-    /*
+    /* $(document).ready(function() {
+        $("").click(function(){
+            $(this).parents("").hide();
+        });
+    });
 
-    // example: loadDoc("url", myFunction);
-    function loadDoc(url, cFunction) {
-        var xhttp;
-        xhttp=new XMLHttpRequest();
-        xhttp.onreadystatechange=function() {
-            if (this.readyState==4 && this.status==200) {
-                cFunction(this);
-            }
-        };
-        xhttp.open("GET", url, true);
-        xhttp.send();
-    }
-
-    // getBooks(xhttp) {}
-    function getBooks(xhttp) {
-        xmlDoc = xhttp.responseXML;
-        txt = "<option value='#' selected='selected'><?php echo $bible_content[$lang][3];?></option>";
-        x = xmlDoc.getElementsByTagName("b");
-        for (i = 0; i < x.length; i++) {
-            txt += "<option value='"+x[i].getAttribute("n")+"'>"+x[i].getAttribute("name")+"</option>";
-        }
-        document.getElementById("textDisplay").innerHTML = txt;
-    }
-
-    function showBible(str) {
-        if (str=="") {
-            document.getElementById("results").innerHTML="";
-            return;
-        }
-        
-    }
-
-    window.onload = function() {
-
-        // load books list
-        loadDoc(textLoc, getBooks);
-        
-    }
-
-    $(document).ready(function () {
-        $(document).on("change", "select[id='bookSelect']", function() {
-            window.bookNum = $(this).val();
-            console.log(window.bookNum);
-        })
-
-    $(document).ready(function () {
-        $(document).on("change", "select[id='chapterSelect']", function() {
-            window.chapNum = $(this).val();
-            console.log(window.chapNum);
-        })
-    })
-
-    })*/
+    $("#textDisplay").append("<h3 id='"+_chapN+"' class='workChapName'>"+_chapName+"</h3>");
+    $(this).find('paragraph').each(function () {
+        $("#textDisplay").append("<p class='work'>"+$(this).text()+"</p>");
+    }); */
 </script>
 
 <div id="navDisplay">
