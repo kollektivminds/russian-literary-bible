@@ -28,12 +28,6 @@ include "templates/header.php";
                     var _chapN = $(this).attr("n");
                     //console.log(_chapN);
                     _chapDict[_chapName] = _chapN;
-                    $("#textDisplay").append("<div id='"+_chapN+"' class='chapText'><h3 id='"+_chapN+"' class='workChapName'>"+_chapName+"</h3>");
-                    //$("#textDisplay").append("");
-                    $(this).find('paragraph').each(function () {
-                        $("#textDisplay").append("<p class='work'>"+$(this).text()+"</p>");
-                    })
-                    $("#textDisplay").append("</div>");
                 });
                 $("#navDisplay").append("<p>Part "+_partName+": ");
                 $.each(_chapDict, function( k , v ) {
@@ -57,6 +51,16 @@ include "templates/header.php";
     $(this).find('paragraph').each(function () {
         $("#textDisplay").append("<p class='work'>"+$(this).text()+"</p>");
     }); */
+    
+    /*var _chapDiv = document.createElement('div');
+    _chapDiv.setAttribute('class', 'chapText');
+    _chapDiv.setAttribute('id', _chapN);
+    _chapDiv.append("<h3 id='"+_chapN+"'>"+_chapName+"</h3>");
+    //$("#textDisplay").append("<div id='"+_chapN+"' class='chapText' style='border:2px solid black;'><h3 id='"+_chapN+"' class='workChapName'>"+_chapName+"</h3>");
+    $(this).find('paragraph').each(function () {
+        _chapDiv.append("<p class='work'>"+$(this).text()+"</p>");
+    });
+    $("#textDisplay").html(_chapDiv);*/
 </script>
 
 <div id="navDisplay">
