@@ -28,8 +28,8 @@
                 <li class="nav-item"><a href="/texts.php"><?php echo $nav_menu[$lang][3];?></a></li>
                 <li class="nav-item">
                     <select onchange="set_language()" name="set_lang" id="lang">
-                        <option value="en" <?php echo $en_select?>>en</option>
-                        <option value="ru" <?php echo $ru_select?>>ру</option>
+                        <option value="en" <?php echo $en_select?>>Eng</option>
+                        <option value="ru" <?php echo $ru_select?>>Рус</option>
                     </select>
                 </li>
             </ul>

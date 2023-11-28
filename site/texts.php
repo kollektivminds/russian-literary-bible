@@ -8,12 +8,25 @@ include('templates/lang-trans.php');
 <?php
 include "templates/header.php";
 ?>
-
 <?php
 
 $libLoc = './texts/';
+$libTitles = scandir($libLoc);
+// echo $libTitles;
+$libTitles = array_diff(scandir($libLoc), array('.', '..'));
+foreach ($libTitles as $file_name) {
+    $rawTitle = rtrim($file_name, ".xml");
+    $cleanTitle = ucfirst($rawTitle);
+    echo "<a href='?txt=$rawTitle'>$cleanTitle</a> ";
+}
+/* for ($i=0; < $libTitles.count(); $i++ {
+    echo $libTitles[$i];
+}) */
+// echo $libTitlesClean;
 
 ?>
+
+<hr>
 
 <script>
     const libLoc = './texts'
@@ -69,13 +82,11 @@ $libLoc = './texts/';
     $("#textDisplay").html(_chapDiv);*/
 </script>
 
-<div id="navDisplay">
+<div id="navDisplay"></div>
 
-</div>
 <hr>
-<div id="textDisplay" style="overflow-x:hidden;overflow-y:auto;height:600px;">
 
-</div>
+<div id="textDisplay" style="overflow-x:hidden;overflow-y:auto;height:600px;"></div>
 
 <?php
 include "templates/footer.php";
