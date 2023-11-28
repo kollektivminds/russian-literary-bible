@@ -2,14 +2,14 @@
     <meta charset="UTF-8">
     <title><?php echo $title[$lang];?></title>
     <meta name="description" contents="Website for Revolutionary Gospel">
-    <meta name="keywords" content="russian, literature, bible" />
+    <meta name="keywords" content="russian, literature, bible, dissertation, digital, humanities" />
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
-
+        // makes language changer selection a URL parameter on change
         function set_language(){
             var language=jQuery('#lang').val();
             console.log("Lang is "+language);

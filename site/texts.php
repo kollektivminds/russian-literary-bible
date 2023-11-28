@@ -9,8 +9,14 @@ include('templates/lang-trans.php');
 include "templates/header.php";
 ?>
 
+<?php
+
+$libLoc = './texts/';
+
+?>
 
 <script>
+    const libLoc = './texts'
     var textLoc = 'texts/mother.xml';
 
     $.ajax({
