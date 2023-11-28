@@ -150,7 +150,7 @@ include "templates/header.php";
     <p><?php echo $bible_content[$lang][7];?>:</p>
     <div id="results-text">
     <?php
-    $myXml=simplexml_load_file("data/bible.xml");
+    $myXml=simplexml_load_file("./data/bible.xml");
 
     if(isset($_GET["book"])) {
         $book=$_GET["book"];
