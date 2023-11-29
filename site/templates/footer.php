@@ -2,13 +2,16 @@
         <script>
             // keeps search string between pages (e.g. "lang=ru")
             var searchString = new URL(window.location).search;
-            document.querySelectorAll("[href]").forEach(link => {
+            if (searchString.includes("lang=")) {
+                document.querySelectorAll("[href]").forEach(link => {
                         if (link.href.startsWith("/") || link.href.startsWith(".") || (link.href.startsWith("http") && link.href.includes(window.location.hostname)) && (link.href.endsWith(".php"))) {
                                 var current = link.href;
                                 link.href = current + searchString;
-                                //console.log(link.href);
+                                console.log(link.href);
                         }
-            });
+                });
+            }
+            
         </script>
         <footer>
             <nav id="nav-footer">

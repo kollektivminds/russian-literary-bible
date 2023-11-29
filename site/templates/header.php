@@ -6,16 +6,8 @@
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
+    <script src="js/main.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script>
-        // makes language changer selection a URL parameter on change
-        function set_language(){
-            var language=jQuery('#lang').val();
-            console.log("Lang is "+language);
-            window.location.href='?lang='+language;
-        }
-    </script>
 </head>
 <body>
     <header>
