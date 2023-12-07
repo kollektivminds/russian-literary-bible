@@ -1,5 +1,11 @@
         </div>
-        <script>
+        <div class="overlay">
+            <div class="langButtonBox">
+                <div class="langButton"><button onclick="setLanguage(this.value)" type="button" class="langButtons" value="en">Eng</button></div>
+                <div class="langButton"><button onclick="setLanguage(this.value)" type="button" class="langButtons" value="ru">Рус</button></div>
+            </div>
+        </div>
+        <!-- <script>
             // keeps search string between pages (e.g. "lang=ru")
             var searchString = new URL(window.location).search;
             if (searchString.includes("lang=")) {
@@ -11,8 +17,7 @@
                         }
                 });
             }
-            
-        </script>
+        </script> -->
         <footer>
             <nav id="nav-footer">
             <ul id="nav-menu">

@@ -6,8 +6,8 @@
     <meta name="robots" content="noindex" />
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
-    <script src="js/main.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/main.js" type="text/javascript"></script>
 </head>
 <body>
     <header>
@@ -19,7 +19,7 @@
                 <li class="nav-item"><a href="/bible.php"><?php echo $nav_menu[$lang][2];?></a></li>
                 <li class="nav-item"><a href="/texts.php"><?php echo $nav_menu[$lang][3];?></a></li>
                 <li class="nav-item">
-                    <select onchange="set_language()" name="set_lang" id="lang">
+                    <select onchange="setLanguage(this.value)" name="set_lang" id="lang">
                         <option value="en" <?php echo $en_select?>>Eng</option>
                         <option value="ru" <?php echo $ru_select?>>Рус</option>
                     </select>
