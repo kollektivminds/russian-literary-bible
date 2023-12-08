@@ -1,15 +1,13 @@
 <?php
-$en_select='';
-$ru_select='';		
-//$lang='';
 
-if(isset($_COOKIE['lang'])){
-	$lang = $_COOKIE['lang'];
-} else if ($_COOKIE['lang']=='ru'){
-	$ru_select='selected';	
+if($_COOKIE['lang']=='ru'){
+	$ru_select='selected';
+	$en_select = '';
 	$lang='ru';
 } else {
 	$en_select='selected';
+	$ru_select = '';
 	$lang='en';
 }
+
 ?>

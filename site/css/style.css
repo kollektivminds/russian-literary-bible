@@ -1,5 +1,7 @@
 /* 
+ * 
  * R E V O L U T I O N A R Y   G O S P E L   S T Y L E   S H E E T
+ *
  */
 
 html {
@@ -34,7 +36,8 @@ nav {
 }
 
 #nav-logo {
-  align-self: flex-start;
+  padding: 1em;
+  height: 3em;
 }
 
 #nav-menu {
@@ -42,11 +45,17 @@ nav {
   align-content: flex-end;
   justify-content: right;
   margin: 1rem;
+  width: 100%;
 }
 
 .nav-item {
   list-style: none;
   margin: 1rem;
+}
+
+#lang {
+  margin: 1em;
+  align-self: center;
 }
 
 #nav-footer {
@@ -64,11 +73,11 @@ nav {
    */
 
 .overlay {
-  opacity:0.8;
+  opacity: 0.8;
   z-index: 1000;
   position: fixed;
-  top:0px;
-  left:0px;
+  top: 0px;
+  left: 0px;
   width: 100%;
   height: 100%;
   background-color: rgba(255, 255, 255, 0);
@@ -83,7 +92,8 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%);
   justify-content: center;
-  align-items: center;width: 40%;
+  align-items: center;
+  width: 40%;
   height: auto;
   padding: 2em;
   /* margin: 2em; */

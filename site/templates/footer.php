@@ -1,10 +1,16 @@
         </div>
+
+        <?php
+
+        if(!isset($_COOKIE['lang'])) { ?>
         <div class="overlay">
             <div class="langButtonBox">
                 <div class="langButton"><button onclick="setLanguage(this.value)" type="button" class="langButtons" value="en">Eng</button></div>
                 <div class="langButton"><button onclick="setLanguage(this.value)" type="button" class="langButtons" value="ru">Рус</button></div>
             </div>
         </div>
+        <?php } ?>
+
         <!-- <script>
             // keeps search string between pages (e.g. "lang=ru")
             var searchString = new URL(window.location).search;
