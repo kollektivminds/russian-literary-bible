@@ -10,11 +10,13 @@ include "templates/header.php";
 ?>
 
 <?php 
-/* foreach ($libTitles as $file_name) {
+$libLoc = './texts/';
+$libTitles = array_diff(scandir($libLoc), array('.', '..'));
+foreach ($libTitles as $file_name) {
     $rawTitle = rtrim($file_name, ".xml");
     $cleanTitle = ucfirst($rawTitle);
-    echo "<div id='$cleanTitle' class='text-div'>$cleanTitle text div</div>";
-} */
+    echo "<div id='$cleanTitle' class='text-div'><a class='text-link' href='#'>$cleanTitle</a></div>";
+};
 ?>
 
 

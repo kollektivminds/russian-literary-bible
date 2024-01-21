@@ -1,11 +1,3 @@
-<?php
-
-for ($i=0; $i < 3; $i++) { 
-    echo "<div class='displayTextChild'>Text div #$i</div>";
-}
-
-?>
-
 <script>
     const libLoc = './texts'
     var textLoc = 'texts/mother.xml';

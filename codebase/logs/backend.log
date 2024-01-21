@@ -1,4 +1,2 @@
-2023-11-20 15:31:51,118 INFO Loading dictionaries from /home/xtra/.local/lib/python3.9/site-packages/pymorphy2_dicts_ru/data
-2023-11-20 15:31:51,208 INFO format: 2.4, revision: 417127, updated: 2020-10-11T15:05:51.070345
-2023-11-20 15:31:52,399 INFO Loading dictionaries from /home/xtra/.local/lib/python3.9/site-packages/pymorphy2_dicts_ru/data
-2023-11-20 15:31:52,481 INFO format: 2.4, revision: 417127, updated: 2020-10-11T15:05:51.070345
+2024-01-21 16:43:37,393 INFO Loading dictionaries from /home/xtra/.local/lib/python3.9/site-packages/pymorphy2_dicts_ru/data
+2024-01-21 16:43:37,432 INFO format: 2.4, revision: 417127, updated: 2020-10-11T15:05:51.070345
