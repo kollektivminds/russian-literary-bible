@@ -148,3 +148,63 @@ def GetRankDf(TokenDf, col='lemma', no_stop=True):
     RankDf.index.name = col
     RankDf['rank'] = np.arange(1,len(RankDf)+1)
     return RankDf
+
+def textRegularize(libTextsDf, w_id):
+    chap_works = (6, 14)
+    # grab text
+    textDf = libTextsDf.iloc[[w_id]]
+    if w_id in chap_works:
+        # split into chapters
+        textDf = pd.DataFrame(data=textDf.text.str.split(r'\n\n').to_list()[0])
+        # get chapter list
+        chapTitles = textDf.iloc[::2][0].to_list()
+        chapTexts = textDf.iloc[1::2][0].to_list()
+        # add chapters to df
+        textDf = pd.DataFrame(data={'chap':chapTitles, 'text':chapTexts})
+        # clean chapter list of white space
+        textDf.chap = textDf.chap.str.replace('\W', '', regex=True)
+        # label parts
+        textDf['part'] = ['1' if chap < 29 else '2' for chap in range(len(textDf.chap))]
+        # break chapters into paragraphs
+    textDf = textDf['text'].str.split(' \n', expand=True).stack().to_frame().reset_index().rename(columns={'level_0':'chapID','level_1':'para',0:'text'})
+    #else:textDf = pd.DataFrame(data={'text':textDf.text.str.split(r'\n').to_list()[0]})
+    # regularize
+    textDf['text'] = textDf.text.str.replace('\n|\s{2,}', '')
+    # remove white space paragraphs
+    textDf = textDf.loc[~textDf.text.str.contains(r"^\W*$", regex=True)]
+    #textDf['part'] = textDf.chapID.apply(lambda x: int('1') if x < 30 else int('2'))
+    #textDf['chap'] = textDf.chapID.map(textDf['chapID'].to_dict())
+    textDf['para'] = textDf['para'].apply(lambda x: x+1)
+    textDf['paraID'] = range(1, len(textDf)+1)
+    if w_id in chap_works:
+        textDf['chapID'] = textDf['chapID'].apply(lambda x: x+1)
+        return textDf
+    else:
+        return textDf[['text', 'paraID']]
+    
+# make XML from text
+def makeXML(textTitle, textDf, textXmlDf):
+    root = etree.Element("text")
+    print(root.tag)
+    pt = ch = cn = pa = pn = 0
+    nameDict = textDf.chap.to_dict()
+    for chap in chapList:
+        #print(f"Chap {chap}")
+        root.append(etree.Element("chapter", n=str(cn+1), name=nameDict.get(chap)))
+        paraList = textXmlDf.loc[(textXmlDf['part'] == part) & (textXmlDf['chapID'] == chap)].index
+        #print(paraList)
+        for paragraph in paraList:
+            #print(f"Paragraph {paragraph}")
+            root[ch].append(etree.Element("paragraph", n=str(pn+1), name=str(pa+1)))
+            paraText = textXmlDf.loc[paragraph].text
+            #print(f"paraText: {paraText}")
+            #print(f"pt = {pt}; ch = {ch}; paragraph = {paragraph}")
+            root[ch][pa].text = paraText
+            pa+=1
+            pn+=1
+        pa=0
+        ch+=1
+        cn+=1
+    #print(etree.tostring(root, pretty_print=True, xml_declaration=True))
+    writePath = '..site/texts/'+textTitle+'.xml'
+    etree.ElementTree(root).write(writePath, pretty_print=True, xml_declaration=True, encoding='windows-1251')
