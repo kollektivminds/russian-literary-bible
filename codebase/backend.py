@@ -1,3 +1,5 @@
+import os 
+import codecs
 import re
 import json
 import time
@@ -9,6 +11,7 @@ from natasha import Segmenter, MorphVocab, NewsEmbedding, NewsMorphTagger, NewsS
 import tqdm
 from tqdm.notebook import trange, tqdm
 import time
+import matplotlib.pyplot as plt
 
 logging.basicConfig(format='%(asctime)s %(levelname)s %(message)s', \
                     filename='logs/backend.log', \
@@ -150,7 +153,7 @@ def GetRankDf(TokenDf, col='lemma', no_stop=True):
     return RankDf
 
 def textRegularize(libTextsDf, w_id):
-    chap_works = (6, 14)
+    chap_works = (6, 14, 22)
     # grab text
     textDf = libTextsDf.iloc[[w_id]]
     if w_id in chap_works:
