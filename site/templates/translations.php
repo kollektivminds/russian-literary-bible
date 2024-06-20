@@ -10,13 +10,15 @@ $nav_menu=array(
 		'Home',
 		'About',
 		'Bible', 
-		'Texts'
+		'Texts',
+		'DH Cert. Portfolio'
 	),
 	'ru'=>array(
 		'Главная',
 		'О проекте',
 		'Библия',
-		'Худож. произ.'
+		'Худож. произ.',
+		'Портфолио ЦГН'
 		)
 );
 
@@ -66,6 +68,11 @@ $bible_content=array(
 $texts_content=array(
 	'en'=>array('Home of RG Project'),
 	'ru'=>array('Главная страница проекта РЕ')
+);
+
+$portfolio_content=array(
+	'en'=>array('DH Certificate Portfolio', "This project represents the capstone of my early research in the Digital Humanities. RG's contents are originally my own, but they have a distinct heritage from past projects on which I've worked or collaborated. What follows is a mini-history of how this came to be.", "'Computational thinking' is a term used to describe humans' capacity to interpret information like a computer: literally, modularly, serially, and so forth."),
+	'ru'=>array('Сайт-портфолио на сертификат по ЦГН')
 );
 
 ?>

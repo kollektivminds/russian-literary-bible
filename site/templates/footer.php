@@ -31,6 +31,7 @@
                 <li class="nav-item"><a href="about.php"><?php echo $nav_menu[$lang][1];?></a></li>
                 <li class="nav-item"><a href="bible.php"><?php echo $nav_menu[$lang][2];?></a></li>
                 <li class="nav-item"><a href="texts.php"><?php echo $nav_menu[$lang][3];?></a></li>
+                <li class="nav-item"><a href="portfolio.php"><?php echo $nav_menu[$lang][4];?></a></li>
             </ul>
             </nav>
             <p id="copyright">&copy; Aaron M. Thompson <?php echo date("Y"); ?></p>
