@@ -1,12 +1,4 @@
-2024-07-02 18:38:24,886 INFO Loading dictionaries from /home/aaron/miniconda3/envs/diss/lib/python3.10/site-packages/pymorphy2_dicts_ru/data
-2024-07-02 18:38:24,946 INFO format: 2.4, revision: 417127, updated: 2020-10-11T15:05:51.070345
-2024-07-02 18:42:00,046 DEBUG matplotlib data path: /home/aaron/miniconda3/envs/diss/lib/python3.10/site-packages/matplotlib/mpl-data
-2024-07-02 18:42:00,052 DEBUG CONFIGDIR=/home/aaron/.var/app/com.visualstudio.code-oss/config/matplotlib
-2024-07-02 18:42:00,053 DEBUG interactive is False
-2024-07-02 18:42:00,053 DEBUG platform is linux
-2024-07-02 18:42:00,192 DEBUG CACHEDIR=/home/aaron/.var/app/com.visualstudio.code-oss/cache/matplotlib
-2024-07-02 18:42:00,192 DEBUG font search path [PosixPath('/home/aaron/miniconda3/envs/diss/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/ttf'), PosixPath('/home/aaron/miniconda3/envs/diss/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/afm'), PosixPath('/home/aaron/miniconda3/envs/diss/lib/python3.10/site-packages/matplotlib/mpl-data/fonts/pdfcorefonts')]
-2024-07-02 18:42:00,382 INFO Failed to extract font properties from /usr/share/fonts/noto-emoji/NotoColorEmoji.ttf: In FT2Font: Could not set the fontsize (invalid pixel size; error code 0x17)
-2024-07-02 18:42:00,406 INFO generated new fontManager
-2024-07-02 18:42:00,654 DEBUG Loaded backend module://matplotlib_inline.backend_inline version unknown.
-2024-07-02 18:42:00,657 DEBUG Loaded backend module://matplotlib_inline.backend_inline version unknown.
+2024-07-06 20:04:15,913 INFO Loading dictionaries from /home/amt3ad/.conda/envs/diss/lib/python3.10/site-packages/pymorphy2_dicts_ru/data
+2024-07-06 20:04:15,953 INFO format: 2.4, revision: 417127, updated: 2020-10-11T15:05:51.070345
+2024-07-06 20:04:16,916 DEBUG Loaded backend module://matplotlib_inline.backend_inline version unknown.
+2024-07-06 20:04:16,922 DEBUG Loaded backend module://matplotlib_inline.backend_inline version unknown.
