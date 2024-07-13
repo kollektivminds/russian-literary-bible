@@ -1,5 +1,4 @@
-2024-07-07 13:30:03,132 INFO Loading dictionaries from /home/amt3ad/.conda/envs/diss/lib/python3.10/site-packages/pymorphy2_dicts_ru/data
-2024-07-07 13:30:03,164 INFO format: 2.4, revision: 417127, updated: 2020-10-11T15:05:51.070345
-2024-07-07 15:35:48,675 DEBUG handle_msg[6630b9ab-b3c1-4596-bfff-452e7e0d9e2b]({'header': {'date': datetime.datetime(2024, 7, 7, 19, 35, 48, 623000, tzinfo=tzutc()), 'msg_id': '6a91c353-87f2-4f9a-90a3-004f6618d1dd', 'msg_type': 'comm_msg', 'session': '1899aaea-3745-4a22-bc2d-97c0b5c3b40f', 'username': '', 'version': '5.2'}, 'msg_id': '6a91c353-87f2-4f9a-90a3-004f6618d1dd', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '6630b9ab-b3c1-4596-bfff-452e7e0d9e2b', 'data': {'method': 'request_states'}}, 'buffers': []})
-2024-07-07 15:35:48,760 DEBUG handle_close[6630b9ab-b3c1-4596-bfff-452e7e0d9e2b]({'header': {'date': datetime.datetime(2024, 7, 7, 19, 35, 48, 711000, tzinfo=tzutc()), 'msg_id': '462f080b-3e91-46a2-a6e6-321e5ac7f078', 'msg_type': 'comm_close', 'session': '1899aaea-3745-4a22-bc2d-97c0b5c3b40f', 'username': '', 'version': '5.2'}, 'msg_id': '462f080b-3e91-46a2-a6e6-321e5ac7f078', 'msg_type': 'comm_close', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '6630b9ab-b3c1-4596-bfff-452e7e0d9e2b', 'data': {}}, 'buffers': []})
-}, 'msg_id': '140977b6-9e5d-4d6b-89e8-ac73c53ac675', 'msg_type': 'comm_close', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': 'ead07837-04ce-4103-8a34-9419c16252f2', 'data': {}}, 'buffers': []})
+2024-07-13 17:26:38,914 INFO Loading dictionaries from /home/amt3ad/.conda/envs/diss/lib/python3.10/site-packages/pymorphy2_dicts_ru/data
+2024-07-13 17:26:38,955 INFO format: 2.4, revision: 417127, updated: 2020-10-11T15:05:51.070345
+2024-07-13 17:27:17,983 DEBUG Loaded backend module://matplotlib_inline.backend_inline version unknown.
+2024-07-13 17:27:17,985 DEBUG Loaded backend module://matplotlib_inline.backend_inline version unknown.
