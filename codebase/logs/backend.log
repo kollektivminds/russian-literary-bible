@@ -1,4 +1,5 @@
-2024-07-16 21:52:54,121 INFO Loading dictionaries from /home/amt3ad/.conda/envs/diss/lib/python3.10/site-packages/pymorphy2_dicts_ru/data
-2024-07-16 21:52:54,158 INFO format: 2.4, revision: 417127, updated: 2020-10-11T15:05:51.070345
-2024-07-16 21:52:54,906 DEBUG Loaded backend module://matplotlib_inline.backend_inline version unknown.
-2024-07-16 21:52:54,907 DEBUG Loaded backend module://matplotlib_inline.backend_inline version unknown.
+2024-07-21 19:08:22,674 INFO Loading dictionaries from /home/amt3ad/.conda/envs/diss/lib/python3.10/site-packages/pymorphy2_dicts_ru/data
+2024-07-21 19:08:22,828 INFO format: 2.4, revision: 417127, updated: 2020-10-11T15:05:51.070345
+2024-07-21 19:08:23,879 DEBUG Loaded backend module://matplotlib_inline.backend_inline version unknown.
+2024-07-21 19:08:23,881 DEBUG Loaded backend module://matplotlib_inline.backend_inline version unknown.
+2024-07-21 19:08:25,227 DEBUG handle_msg[6a28df9c-8ab9-4087-b5a7-ef325605e0ab]({'header': {'date': datetime.datetime(2024, 7, 21, 23, 8, 18, 60000, tzinfo=tzutc()), 'msg_id': '25db04c6-326c-43ce-89eb-9b826dc02780', 'msg_type': 'comm_msg', 'session': '5c51ceba-84c6-4921-b8ce-ff2446b8f5b8', 'username': '', 'version': '5.2'}, 'msg_id': '25db04c6-326c-43ce-89eb-9b826dc02780', 'msg_type': 'comm_msg', 'parent_header': {}, 'metadata': {}, 'content': {'comm_id': '6a28df9c-8ab9-4087-b5a7-ef325605e0ab', 'data': {'method': 'request_states'}}, 'buffers': []})
