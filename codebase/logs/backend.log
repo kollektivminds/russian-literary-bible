@@ -1,4 +1,4 @@
-2024-08-17 15:04:18,624 INFO Loading dictionaries from /home/amt3ad/.conda/envs/diss/lib/python3.10/site-packages/pymorphy2_dicts_ru/data
-2024-08-17 15:04:18,827 INFO format: 2.4, revision: 417127, updated: 2020-10-11T15:05:51.070345
-2024-08-17 15:04:19,971 DEBUG Loaded backend module://matplotlib_inline.backend_inline version unknown.
-2024-08-17 15:04:19,977 DEBUG Loaded backend module://matplotlib_inline.backend_inline version unknown.
+2024-08-18 16:33:56,179 INFO Loading dictionaries from /home/amt3ad/.conda/envs/diss/lib/python3.10/site-packages/pymorphy2_dicts_ru/data
+2024-08-18 16:33:56,235 INFO format: 2.4, revision: 417127, updated: 2020-10-11T15:05:51.070345
+2024-08-18 16:33:59,651 DEBUG Loaded backend module://matplotlib_inline.backend_inline version unknown.
+2024-08-18 16:33:59,653 DEBUG Loaded backend module://matplotlib_inline.backend_inline version unknown.
