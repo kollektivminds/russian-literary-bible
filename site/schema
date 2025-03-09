@@ -1,0 +1,44 @@
+# A. Work
+
+- Description: 
+
+- Fields
+- - ID :: unique identifier of the Work
+- - Title :: name of the Work
+- - Description :: description of the Work
+- - Publication Date :: YYYY of publication
+
+- Related to
+- - Work
+- - Agent
+- - Biblical Segment
+
+# B. Agent
+
+- Description: 
+
+- Fields
+- - ID :: unique identifier of the Work
+- - Title :: name of the Work
+- - Description :: description of the Work
+- - Publication Date :: YYYY of publication
+
+- Related to
+- - Work
+- - Agent
+- - Biblical Segment
+
+# C. Biblical Segment
+
+- Description: 
+
+- Fields
+- - ID :: unique identifier of the Work
+- - Title :: name of the Work
+- - Description :: description of the Work
+- - Publication Date :: YYYY of publication
+
+- Related to
+- - Work
+- - Agent
+- - Biblical Segment
