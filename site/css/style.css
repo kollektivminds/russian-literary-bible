@@ -6,7 +6,7 @@
 
 html {
   color: rgb(0, 0, 0);
-  background-color: rgb(243, 218, 195);
+  background-color: #ffffff;
   font-size: 1.5em;
   line-height: 1.4;
   position: relative;
@@ -19,7 +19,7 @@ html {
    */
 
 nav {
-  background-color: rgba(232, 221, 221, 0.5);
+  background-color: #e6e4d7;
   color: #fff;
   opacity: .9;
 }

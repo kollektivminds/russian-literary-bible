@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav id="nav-header">
-            <a href="index.php"><img id="nav-logo" src="./img/favicon-32x32.png"></a>
+            <a href="index.php"><img id="nav-logo" src="./img/android-chrome-192x192.png"></a>
             <ul id="nav-menu">
                 <li class="nav-item"><a href="/index.php"><?php echo $nav_menu[$lang][0]; ?></a></li>
                 <li class="nav-item"><a href="/about.php"><?php echo $nav_menu[$lang][1]; ?></a></li>
